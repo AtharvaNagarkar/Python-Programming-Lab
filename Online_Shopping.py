@@ -13,10 +13,10 @@ while 1:
     # the user cancelled the choice, and we got None.
     
     if choice=="Amazon":
-      msg="What do you want to buy?"
-      title="Shop items"
-      choices=["Electronics","Clothing","Furniture"]
-      choice = choicebox(msg, title, choices)
+          msg="What do you want to buy?"
+          title="Shop items"
+          choices=["Electronics","Clothing","Furniture"]
+          choice = choicebox(msg, title, choices)
       if choice=="Electronics":
           msg="What do you want to buy?"
           title="Shop electronics"
