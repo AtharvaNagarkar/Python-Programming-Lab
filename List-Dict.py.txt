@@ -1,0 +1,15 @@
+x=input("Enter your name")
+y=int(input("Enter your roll number"))
+z=int(input("Enter your GR number"))
+a=int(input("Enter your Maths marks"))
+b=int(input("Enter your English marks"))
+c=int(input("Enter your Science marks"))
+l=[]
+l.append(x)
+l.append(y)
+l.append(z)
+l.append(a)
+l.append(b)
+l.append(c)
+print(l)
+d={roll:identifiers}
