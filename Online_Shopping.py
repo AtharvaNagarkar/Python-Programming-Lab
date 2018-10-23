@@ -1,5 +1,6 @@
 from easygui import *
 import sys
+x=0
 sum=0
 list=[]
 while 1:
@@ -26,16 +27,22 @@ while 1:
 			title="Dell"
 			choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
 			choice=choicebox(msg, title, choices)
+			list.append(choice)
+			x+=int(filter(str.isdigit, choice))
 		 elif choice=="Apple":
                         msg="Select vendor and price"
                         title="Apple"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
+			x+=int(filter(str.isdigit, choice))
 	       	 else:
                         msg="Select vendor and price"
                         title="Lenovo"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
+			x+=int(filter(str.isdigit, choice))
           elif choice=="Clothing":
         	  msg="What do you want to buy?"
         	  title="Shop clothing"
@@ -46,16 +53,19 @@ while 1:
 			title="Forever 21"
 			choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
 			choice=choicebox(msg, title, choices)
+			list.append(choice)
 		  elif choice=="UCB":
                         msg="Select vendor and price"
                         title="UCB"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
 		  else:
                         msg="Select vendor and price"
                         title="Zara"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
           elif choice=="Furniture":
          	  msg="What do you want to buy?"
          	  title="Shop furniture"
@@ -66,16 +76,19 @@ while 1:
 			title="Sofa"
 			choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
 			choice=choicebox(msg, title, choices)
+			list.append(choice)
                   elif choice=="Bed":
                         msg="Select vendor and price"
                         title="Bed"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
 		  else:
                         msg="Select vendor and price"
                         title="Table"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
       elif choice=="Flipkart":
     	  msg="What do you want to buy?"
      	  title="Shop items"
@@ -91,16 +104,19 @@ while 1:
                         title="Dell"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice) 
                   elif choice=="Apple":
                         msg="Select vendor and price"
                         title="Apple"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   else:
                         msg="Select vendor and price"
                         title="Lenovo"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
-                        choice=choicebox(msg, title, choices) 
+                        choice=choicebox(msg, title, choices)
+			list.append(choice) 
           elif choice=="Clothing":
         	  msg="What do you want to buy?"
         	  title="Shop clothing"
@@ -111,16 +127,19 @@ while 1:
                         title="Forever 21"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   elif choice=="UCB":
                         msg="Select vendor and price"
                         title="UCB"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   else:
                         msg="Select vendor and price"
                         title="Zara"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
           elif choice=="Furniture":
         	  msg="What do you want to buy?"
         	  title="Shop furniture"
@@ -131,16 +150,19 @@ while 1:
                         title="Sofa"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   elif choice=="Bed":
                         msg="Select vendor and price"
                         title="Bed"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   else:
                         msg="Select vendor and price"
                         title="Table"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
       elif choice=="Snapdeal":
     	  msg="What do you want to buy?"
           title="Shop items"
@@ -156,16 +178,19 @@ while 1:
                         title="Dell"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   elif choice=="Apple":
                         msg="Select vendor and price"
                         title="Apple"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   else:
                         msg="Select vendor and price"
                         title="Lenovo"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
           elif choice=="Clothing":
         	  msg="What do you want to buy?"
         	  title="Shop clothing"
@@ -176,16 +201,19 @@ while 1:
                         title="Forever 21"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   elif choice=="UCB":
                         msg="Select vendor and price"
                         title="UCB"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   else:
                         msg="Select vendor and price"
                         title="Zara"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
           elif choice=="Furniture":
         	  msg="What do you want to buy?"
         	  title="Shop furniture"
@@ -196,16 +224,19 @@ while 1:
                         title="Sofa"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   elif choice=="Bed":
                         msg="Select vendor and price"
                         title="Bed"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   else:
                         msg="Select vendor and price"
                         title="Table"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
       elif choice=="Myntra":
           msg="What do you want to buy?"
           title="Shop items"
@@ -221,16 +252,19 @@ while 1:
                         title="Dell"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                  elif choice=="Apple":
                         msg="Select vendor and price"
                         title="Apple"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                  else:
                         msg="Select vendor and price"
                         title="Lenovo"
                         choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
           elif choice=="Clothing":
         	  msg="What do you want to buy?"
         	  title="Shop clothing"
@@ -241,16 +275,19 @@ while 1:
                         title="Forever 21"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   elif choice=="UCB":
                         msg="Select vendor and price"
                         title="UCB"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                   else:
                         msg="Select vendor and price"
                         title="Zara"
                         choices=["v1:Rs.2000","v2:Rs.2500","v3:Rs.3000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
           elif choice=="Furniture":
          	 msg="What do you want to buy?"
          	 title="Shop furniture"
@@ -261,19 +298,23 @@ while 1:
                         title="Sofa"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                  elif choice=="Bed":
                         msg="Select vendor and price"
                         title="Bed"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+			list.append(choice)
                  else:
                         msg="Select vendor and price"
                         title="Table"
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
+     			list.append(choice)
       msg = "Do you want to continue ? "
       title = "Please Confirm"
       if ccbox(msg, title):     # show a Continue/Cancel dialog
                  pass  # user chose Continue
       else:
+		 textbox('Purchase Memo','Bill Desk',text = list + ' ' + str(x))
 	 	 sys.exit(0)
