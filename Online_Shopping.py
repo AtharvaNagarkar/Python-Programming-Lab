@@ -35,11 +35,11 @@ while 1:
           title="Shop furniture"
           choices=["Sofa","bed","table"]
           choice=choicebox(msg, title, choices)
-    elif choice=="Flipkart":
-      msg="What do you want to buy?"
-      title="Shop items"
-      choices=["Electronics","Clothing","Furniture"]
-      choice = choicebox(msg, title, choices)
+      elif choice=="Flipkart":
+    	  msg="What do you want to buy?"
+     	  title="Shop items"
+     	  choices=["Electronics","Clothing","Furniture"]
+     	  choice = choicebox(msg, title, choices)
       if choice=="Electronics":
           msg="What do you want to buy?"
           title="Shop electronics"
@@ -55,11 +55,11 @@ while 1:
           title="Shop furniture"
           choices=["Sofa","bed","table"]
           choice=choicebox(msg, title, choices)
-    elif choice=="Snapdeal":
-      msg="What do you want to buy?"
-      title="Shop items"
-      choices=["Electronics","Clothing","Furniture"]
-      choice = choicebox(msg, title, choices)
+      elif choice=="Snapdeal":
+    	  msg="What do you want to buy?"
+          title="Shop items"
+          choices=["Electronics","Clothing","Furniture"]
+          choice = choicebox(msg, title, choices)
       if choice=="Electronics":
           msg="What do you want to buy?"
           title="Shop electronics"
@@ -75,11 +75,11 @@ while 1:
           title="Shop furniture"
           choices=["Sofa","bed","table"]
           choice=choicebox(msg, title, choices)
-    elif choice=="Myntra":
-      msg="What do you want to buy?"
-      title="Shop items"
-      choices=["Electronics","Clothing","Furniture"]
-      choice = choicebox(msg, title, choices)
+      elif choice=="Myntra":
+          msg="What do you want to buy?"
+          title="Shop items"
+          choices=["Electronics","Clothing","Furniture"]
+          choice = choicebox(msg, title, choices)
       if choice=="Electronics":
           msg="What do you want to buy?"
           title="Shop electronics"
