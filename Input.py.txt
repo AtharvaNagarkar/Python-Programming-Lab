@@ -1,8 +1,9 @@
-x=input("Enter your name")
-y=int(input("Enter marks in Maths"))
+//Atharva Nagarkar M 42
+x=input("Enter your name")                        #take inputs from user
+y=int(input("Enter marks in Maths"))              
 z=int(input("Enter marks in English"))
 w=int(input("Enter marks in Science"))
-print(x)
+print(x)                                          #print inputs taken from user
 print(y)
 print(z)
 print(w)
