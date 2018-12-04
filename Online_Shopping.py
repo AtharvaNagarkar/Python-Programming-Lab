@@ -1,14 +1,15 @@
-from easygui import *
+//Atharva Nagarkar M 42
+from easygui import *									#import easygui
 import sys
-x=0
+x=0											#initialize variables
 sum=0
 list=[]
-while 1:
-      msgbox("Welcome")
-      msg ="Which site do you prefer?"
+while 1:										#infinite while loop
+      msgbox("Welcome")									#display message
+      msg ="Which site do you prefer?"							#arguments 
       title = "Online Shopping"
       choices = ["Amazon", "Flipkart", "Snapdeal", "Myntra"]
-      choice = choicebox(msg, title, choices)
+      choice = choicebox(msg, title, choices)						#display the choicebox with arguments
 
     # note that we convert choice to string, in case
     # the user cancelled the choice, and we got None.
@@ -27,8 +28,8 @@ while 1:
 			title="Dell"
 			choices=["v1:Rs.30,000","v2:Rs.32,000","v3:Rs.35,000"]
 			choice=choicebox(msg, title, choices)
-			list.append(choice)
-			x+=int(filter(str.isdigit, choice))
+			list.append(choice)							#append choice to list
+			x+=int(filter(str.isdigit, choice))					#add cost to variable
 		 elif choice=="Apple":
                         msg="Select vendor and price"
                         title="Apple"
@@ -311,10 +312,10 @@ while 1:
                         choices=["v1:Rs.50,000","v2:Rs.55,000","v3:Rs.60,000"]
                         choice=choicebox(msg, title, choices)
      			list.append(choice)
-      msg = "Do you want to continue ? "
+      msg = "Do you want to continue ? "								#choice to exit loop
       title = "Please Confirm"
       if ccbox(msg, title):     # show a Continue/Cancel dialog
-                 pass  # user chose Continue
+                 pass  # user chose Continue								#to continue loop
       else:
 		 textbox('Purchase Memo','Bill Desk',text = list + ' ' + str(x))
-	 	 sys.exit(0)
+	 	 sys.exit(0)										#to exit loop
