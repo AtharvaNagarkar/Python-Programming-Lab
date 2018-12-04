@@ -1,5 +1,6 @@
-import random
-while True:
-    rolled_num = random.randint(1,6)
-    print("The dice rolled and you got: ", rolled_num
-    input("Press any key to roll again.")
+//Atharva Nagarkar M 42
+import random                                                   #import function
+while True:                                                     #while loop
+    rolled_num = random.randint(1,6)                            #randomise input
+    print("The dice rolled and you got: ", rolled_num)          #print the number
+    input("Press any key to roll again.")                       #display message
