@@ -1,15 +1,16 @@
-x=input("Enter your name")
+//Atharva Nagarkar M 42
+x=input("Enter your name")                        #take all inputs from user
 y=int(input("Enter your roll number"))
 z=int(input("Enter your GR number"))
 a=int(input("Enter your Maths marks"))
 b=int(input("Enter your English marks"))
 c=int(input("Enter your Science marks"))
-l=[]
-l.append(x)
+l=[]                                              #declare empty list
+l.append(x)                                       #append all inputs to the list
 l.append(y)
 l.append(z)
 l.append(a)
 l.append(b)
 l.append(c)
-print(l)
-d={roll:identifiers}
+print(l)                                          #print list
+d={roll:identifiers}                              #dictionary with roll and identifiers
